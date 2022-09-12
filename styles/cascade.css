@@ -1,0 +1,18 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 29 juin 2022, 10:35:07
+    Author     : HEO
+*/
+
+table{
+    border: black solid 1px;
+    background: whitesmoke;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+td{
+    text-align: center;
+}

@@ -2,7 +2,7 @@
 
 function connexion() {
     try {
-        $conn = new PDO('mysql:host=localhost;port=3306;dbname=livret', 'root', '');
+        $conn = new PDO('mysql:host=localhost;port=3307;dbname=livret', 'root', '');
     } catch (Exception $ex) {
         die('Erreur:' . $ex->getMessage());
     }return $conn;
@@ -73,18 +73,16 @@ function modif_ens($codeenseignant) {
     $nomens = filter_input(INPUT_POST, "nomens");
     $prenomens = filter_input(INPUT_POST, "prenomens");
     if ($nomens) {
-        $modifn = connexion()->prepare("UPDATE enseignant SET NOMENSEIGNANT ='" . $nomens . "',PRENOMENSEIGNANT ='" . $prenomens . "' WHERE CodeEnseignant = :codeens");
+        $modifn = connexion()->prepare("UPDATE enseignant SET NOMENSEIGNANT ='" . $nomens . "' WHERE CodeEnseignant = :codeens");
         $modifn->bindParam(':codeens', $codeenseignant, PDO::PARAM_INT);
         $modifn->execute();
         echo 'nom modifié' . ' ';
-        return $modifn;
     }
     if ($prenomens) {
-        $modifp = connexion()->prepare("UPDATE enseignant SET PRENOMENSEIGNANT ='" . $prenomens . "',PRENOMENSEIGNANT ='" . $prenomens . "' WHERE CodeEnseignant = :codeens");
+        $modifp = connexion()->prepare("UPDATE enseignant SET PRENOMENSEIGNANT ='" . $prenomens . "' WHERE CodeEnseignant = :codeens");
         $modifp->bindParam(':codeens', $codeenseignant, PDO::PARAM_INT);
         $modifp->execute();
         echo 'prénom modifié' . ' ';
-        return $modifp;
     }
 }
 

@@ -8,8 +8,8 @@
             <div style="display: inline-table">
                 <h4>Saisir le formulaire :</h4>
                 <form method="post" class="form-control">
-                    Nom :    <input type="text" name="nom" required/>
-                    Prenom : <input type="text" name="prenom" required/>
+                    <label>Nom :</label><input type="text" name="nom" required/>
+                    <label>Prenom :</label> <input type="text" name="prenom" required/>
                     <input type="submit" value="Ajouter" name="saisie_pr"/>
                 </form>
             </div>

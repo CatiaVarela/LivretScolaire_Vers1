@@ -8,5 +8,4 @@ require_once '../Vue/Sommaire.php';
 $enseignant = recupere_enseignants();
 insert_enseignants();
 require_once '../Vue/Professeurs.php';
-
         ?>

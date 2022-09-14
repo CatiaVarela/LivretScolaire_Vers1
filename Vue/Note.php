@@ -27,8 +27,8 @@
                     foreach ($matiere as $m) {
                         ?>
                         <tr>
-                            <td><input type="number" step="0.001" min="0" max="20" name="S1[]" /></td>
-                            <td><input type="number" step="0.001" min="0" max="20" name="S2[]"/></td>
+                            <td><input type="number" step="0.01" min="0" max="20" name="S1[]" /></td>
+                            <td><input type="number" step="0.01" min="0" max="20" name="S2[]"/></td>
                             <td><?php echo $m['LibMatiere'] ?></td>
                             <td><input type="checkbox" name="matiere[]" value="<?php echo $m['CodeMatiere'] ?>"/></td>
                             <td><textarea rows="2" cols="40" name="appreciations[]" maxlength="1000"></textarea></td>

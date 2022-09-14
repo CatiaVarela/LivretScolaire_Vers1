@@ -8,8 +8,8 @@
             <div style="display: inline-table">
                 <h4>Saisir le formulaire :</h4>
                 <form method="post" class="form-control">
-                    Nom :    <input type="text" name="nom" required/>
-                    Prenom : <input type="text" name="prenom" required/>
+                    <label>Nom :</label> <input type="text" name="nom" text-transform="uppercase"; minlength="3" maxlength="20" required/>              
+                    <label>Prenom :</label> <input type="text" name="prenom" style="text-transform:lowercase;" minlength="3" maxlength="20" required/>
                     <input type="submit" value="Ajouter" name="saisie_pr"/>
                 </form>
             </div>
@@ -26,8 +26,8 @@
                         ?>
                         <tr>
                             <?php
-                            echo '<td>' . $e['NOMENSEIGNANT'] . '</td>';
-                            echo '<td>' . $e['PRENOMENSEIGNANT'] . '</td>';
+                            echo '<td>' . strtoupper($e['NOMENSEIGNANT']) . '</td>';
+                            echo '<td>' . ucwords($e['PRENOMENSEIGNANT']) . '</td>';
                             echo '<td><a href=../Controller/C_modif.php?codeens=' . $e['CodeEnseignant'] . '>Modifier <img src="../bootstrap-icons-1.8.3/pencil.svg" height="14" width="25"/></a></td>';
                             echo '<td><a href=../Controller/Supprime.php?codeens=' . $e['CodeEnseignant'] . ' ' . 'onclick="return confirmation();"' . '>Supprimer <img src="../bootstrap-icons-1.8.3/trash.svg" height="14" width="25"/></a></td>';
                         }

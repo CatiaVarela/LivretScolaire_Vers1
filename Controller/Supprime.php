@@ -11,7 +11,7 @@ if ($codemat) {
    supprimer_matiere($codemat);
 ?>
    <script>
-   alert("La matiere à bien était supprimer");
+   alert("La matière à bien été supprimé");
    window.location.href = "../Controller/C_matiere.php";
    </script>
 <?php
@@ -20,7 +20,7 @@ if ($codeens) {
     supprimer_enseignant($codeens);
 ?>
     <script>
-    alert("L'enseignant à bien était supprimer");
+    alert("L'enseignant a bien été supprimé");
     window.location.href = "../Controller/C_Prof.php";
     </script>
 <?php
@@ -30,7 +30,7 @@ if ($codeetudiant) {
     supprimer_etudiant($codeetudiant);
 ?>
     <script>
-    alert("L'étudiant à bien était supprimer");
+    alert("L'étudiant a bien été supprimé");
     window.location.href = "../Controller/C_etudiant.php";
     </script>
     <?php

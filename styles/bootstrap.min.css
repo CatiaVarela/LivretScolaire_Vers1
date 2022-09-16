@@ -3222,7 +3222,7 @@ select{
     display:flex;
     flex-wrap:wrap;
     padding-left:0;
-    margin-bottom:0;
+    margin-bottom:50%;
     list-style:none
 }
 .nav-link{

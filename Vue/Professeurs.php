@@ -3,7 +3,7 @@
         <meta charset="UTF-8">
         <title>Enseignants</title>
     </head>
-    <body>
+    <body margin="0"; padding="0"; height="100%">
         <main class="container">
             <div style="display: inline-table">
                 <h4>Saisir le formulaire :</h4>

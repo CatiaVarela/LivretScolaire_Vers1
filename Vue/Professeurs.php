@@ -9,13 +9,13 @@
                 <h4>Saisir le formulaire :</h4>
                 <form method="post" class="form-control">
                     <label>Nom :</label> <input type="text" name="nom" text-transform="uppercase"; minlength="3" maxlength="20" required/>              
-                    <label>Prenom :</label> <input type="text" name="prenom" style="text-transform:lowercase;" minlength="3" maxlength="20" required/>
+                    <label>Prenom :</label> <input type="text" name="prenom" text-transform="lowercase" minlength="3" maxlength="20" required/>
                     <input type="submit" value="Ajouter" name="saisie_pr"/>
                 </form>
             </div>
             &emsp;&emsp;
 
-            <div style="display: inline-table">
+            <div style="display: inline-table; overflow:scroll; border:#000000 1px solid;">
                 <table>
                     <th>Nom</th>
                     <th>Prénom</th>

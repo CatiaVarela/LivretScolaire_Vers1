@@ -13,16 +13,8 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Z:/projet/Projet/Modele/Connexion_bd.php</file>
-            <file>file:/Z:/projet/Projet/Controller/C_prof.php</file>
-            <file>file:/Z:/projet/Projet/Vue/Accueil.php</file>
-            <file>file:/Z:/projet/Projet/Controller/Supprime.php</file>
-            <file>file:/Z:/projet/Projet/Controller/C_modif.php</file>
-            <file>file:/Z:/projet/Projet/Vue/Professeurs.php</file>
-            <file>file:/Z:/projet/Projet/Vue/Affectation.php</file>
-            <file>file:/Z:/projet/Projet/Vue/Modification.php</file>
-            <file>file:/Z:/projet/Projet/Controller/C_accueil.php</file>
-            <file>file:/Z:/projet/Projet/Vue/Sommaire.php</file>
+            <file>file:/Z:/projetLivret/Controller/C_accueil.php</file>
+            <file>file:/Z:/projetLivret/Vue/Professeurs.php</file>
         </group>
     </open-files>
 </project-private>

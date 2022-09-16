@@ -15,7 +15,7 @@
             </div>
             &emsp;&emsp;
 
-            <div style="display: inline-table; overflow:scroll; border:#000000 1px solid;">
+            <div style="display: inline-table; overflow:scroll; border:#000000; padding: 5px; height: 100%;">
                 <table>
                     <th>Nom</th>
                     <th>Prénom</th>

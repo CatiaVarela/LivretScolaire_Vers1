@@ -41,7 +41,7 @@
 
         <div class="container">
             <footer class="py-2 my-2">
-                <ul class="nav justify-content-center border-top fixed-bottom pb-3 mb-3" style="margin-top: 15%; display: flex">
+                <ul class="nav justify-content-center border-top fixed-bottom pb-3 mb-3">
                     <li class="nav-item"><a href="Accueil.php" class="nav-link px-2 text-muted">Accueil</a></li>
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Login</a></li>
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>

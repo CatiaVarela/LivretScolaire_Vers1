@@ -3222,10 +3222,10 @@ select{
     display:flex;
     flex-wrap:wrap;
     padding-left:0;
-    margin-bottom:50%;
+    margin-bottom:0;
     list-style:none
 }
-.nav-link{
+.nav-link{ 
     display:block;
     padding:var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
     font-size:var(--bs-nav-link-font-size);

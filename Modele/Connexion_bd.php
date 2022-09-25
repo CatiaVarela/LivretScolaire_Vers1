@@ -134,7 +134,7 @@ function recupere_classes() {
 }
 
 function asso_cl_et($valeur) {
-    $etud = connexion()->prepare("SELECT * from asso_9 join classe on classe.classecode = asso_9.classecode join Etudiant on Etudiant.codeetudiant = asso_9.codeetudiant where asso_9.classecode =" . $valeur);
+    $etud = connexion()->prepare("SELECT * from classe_etudiant join classe on classe.classecode = classe_etudiant.classecode join Etudiant on Etudiant.codeetudiant = classe_etudiant.codeetudiant where classe_etudiant.classecode =" . $valeur);
     $etud->execute();
     $et = $etud->fetchAll(PDO::FETCH_ASSOC);
     return $et;

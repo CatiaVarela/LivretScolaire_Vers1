@@ -1,49 +1,32 @@
-
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>Inscription</title>
-        <style>
-            body{
-                background-image: url('images.jpg');
-                background-size: 100%;
-                background-repeat:  no-repeat;
-                padding-left: 30%;
-            }
-            label{
-                display: inline-block;
-                width: 150px;
-                padding-left: 20px;
-            }
-            legend{
-                background-color: gray;
-                color: white;
-                padding: 5px 10px;
-                width:50%;
-            }
-            fieldset{
-                width:50%;
-            }
-        </style>
+        <meta charset="utf-8">
+        <!-- importer le fichier de style -->
+        <link rel="stylesheet" href="../styles/connexion_style.css" media="screen" type="text/css" />
     </head>
     <body>
-        <h1>Inscription</h1><input type="submit" value="Déja inscrit"/>
-        <?php
-        session_start();
-        ?>
-        Compléter votre inscription : <br/>
-        
-        <form name="frm_ajoutInscription" method="post" action="ajoutInscription.php">
-            <fieldset>
-                <legend>Vos informations</legend>
-                 <label for nom> Nom : </label><input type="text" name=""/> <br/><br/>
-                  <label for penom> Prénom : </label><input type="text" name=""/> <br/><br/>
-                <label for txt_login> Login : </label><input type="text" name="txt_login"/> <br/><br/>
-                <label for txt_mdp> Mot de passe : </label><input type="text" name="txt_mdp" /> <br/><br/>
-                 <label for confirm_mdp> Confirmation du mot de passe : </label><input type="text" name=""/> <br/><br/>
-                <input type="submit" value="Envoyer"/>
-            </fieldset>
-        </form>
+        <div id="container">
+            <!-- zone de connexion -->
+
+            <form action="Ajout_inscription.php" method="POST">
+                <h1>Inscription</h1>
+
+                <label><b>Nom</b></label>
+                <input type="text" placeholder="Entrez votre nom" name="nom" required>
+
+                <label><b>Prénom</b></label>
+                <input type="text" placeholder="Entrez votre prénom" name="prenom" required>
+
+                <label><b>Mot de passe</b></label>
+                <input type="password" placeholder="Entrez un mot de passe" name="password" required>
+
+                <label><b>Confirmation du mot de passe</b></label>
+                <input type="password" placeholder="Confirmez votre mot de passe" name="confirm_password" required>
+
+                <label><br/><a href='./Controller/C_accueil.php'>Accueil</a></label>
+
+                <input type="submit" id='submit' value='LOGIN' >
+            </form>
 
     </body>
 </html>

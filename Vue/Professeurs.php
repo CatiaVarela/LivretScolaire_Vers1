@@ -29,7 +29,7 @@
                             echo '<td>' . $e['NOMENSEIGNANT'] . '</td>';
                             echo '<td>' . $e['PRENOMENSEIGNANT'] . '</td>';
                             echo '<td><a href=../Controller/C_modif.php?codeens=' . $e['CodeEnseignant'] . '>Modifier <img src="../bootstrap-icons-1.8.3/pencil.svg" height="14" width="25"/></a></td>';
-                            echo '<td><a href=../Controller/Supprime.php?codeens=' . $e['CodeEnseignant'] . ' ' . 'onclick="return confirmation();"' . '>Supprimer <img src="../bootstrap-icons-1.8.3/trash.svg" height="14" width="25"/></a></td>';
+                            echo '<td><a href=../Controller/C_supprime.php?codeens=' . $e['CodeEnseignant'] . ' ' . 'onclick="return confirmation();"' . '>Supprimer <img src="../bootstrap-icons-1.8.3/trash.svg" height="14" width="25"/></a></td>';
                         }
                         ?>
                     </tr>

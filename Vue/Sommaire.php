@@ -5,7 +5,7 @@
         <title>Menu</title>
 
         <link href="../styles/bootstrap.min.css" rel="stylesheet">
-      
+
     </head>
     <body>
 
@@ -19,6 +19,8 @@
 
                     <div class="collapse navbar-collapse" id="navbarsExample01">
                         <ul class="navbar-nav me-auto mb-2">
+                            <li class="nav-item"><a class="nav-link" href="../Inscription.php">S'inscrire <img src="../bootstrap-icons-1.8.3/box-arrow-in-right.svg" height="14" width="25"/></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Connexion.php">Se connecter <img src="../bootstrap-icons-1.8.3/door-open.svg" height="14" width="25"/></a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Administration</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown01">

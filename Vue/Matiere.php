@@ -24,7 +24,7 @@
                         echo '<tr>';
                         echo '<td>' . $m['LibMatiere'] . '</td>';
                         echo '<td><a href=../Controller/C_modif.php?codemat=' . $m['CodeMatiere'] . '>Modifier <img src="../bootstrap-icons-1.8.3/pencil.svg" height="14" width="15"/></a></td>';
-                        echo '<td><a href=../Controller/Supprime.php?codemat=' . $m['CodeMatiere'] . ' ' . 'onclick="return confirmation();"' . '>Supprimer <img src="../bootstrap-icons-1.8.3/trash.svg" height="14" width="25"/></a></td>';
+                        echo '<td><a href=../Controller/C_supprime.php?codemat=' . $m['CodeMatiere'] . ' ' . 'onclick="return confirmation();"' . '>Supprimer <img src="../bootstrap-icons-1.8.3/trash.svg" height="14" width="25"/></a></td>';
                     }
                     ?>
                     </tr>

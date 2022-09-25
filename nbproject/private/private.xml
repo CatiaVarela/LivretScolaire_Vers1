@@ -12,6 +12,10 @@
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/E:/Projet-master/Modele/Connexion_bd.php</file>
+            <file>file:/E:/Projet-master/Vue/Login.php</file>
+            <file>file:/E:/Projet-master/Controller/C_login.php</file>
+        </group>
     </open-files>
 </project-private>

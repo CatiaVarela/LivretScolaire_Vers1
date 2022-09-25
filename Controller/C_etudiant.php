@@ -7,4 +7,5 @@ require_once '../Vue/Sommaire.php';
 <?php
 $etudiant = recupere_etudiants();
 require_once '../Vue/Etudiant.php';
+require_once '../Vue/Footer.php';
 ?>

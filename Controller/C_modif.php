@@ -29,4 +29,4 @@ if(isset($_POST['nomens']) || isset($_POST['prenomens'])){
    </script>
 <?php
 }
-
+require_once '../Vue/Footer.php';

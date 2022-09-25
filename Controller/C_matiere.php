@@ -17,3 +17,4 @@ insert_matieres(); // Insère les matières dans la base de donnée
     <?php
     
 }
+require_once '../Vue/Footer.php';

@@ -2,7 +2,7 @@
 
 session_start();
 require '../Modele/Connexion_bd.php';
-//permet de faire appel au fichier modéle de bd.
+//permet de faire appel au fichier modèle de bd.
 require '../Vue/Sommaire.php';
 //permet de faire appel au fichier Vue de bd.
 $enseignant = recupere_enseignants();

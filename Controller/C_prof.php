@@ -15,5 +15,5 @@ if (isset($_POST['nom']) and isset($_POST['prenom'])) { //Vérifie si les champs
     </script>
 
     <?php
-    
 }
+require_once '../Vue/Footer.php';

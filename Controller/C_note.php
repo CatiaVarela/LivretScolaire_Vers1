@@ -27,7 +27,5 @@ if (verif_submit('saisie_n') == 'Valider') {
         }
     }
 }
+require_once '../Vue/Footer.php';
 ?>
-
-<!--update note_etudiant
-set Moyenne = ( select sum(Semestre1+Semestre2)/2 group by notecode);-->

@@ -8,14 +8,14 @@
             <div style="display: inline-table">
                 <h4>Saisir le formulaire :</h4>
                 <form method="post" class="form-control">
-                    <label>Nom :</label> <input type="text" name="nom" text-transform="uppercase"; minlength="3" maxlength="20" required/>              
-                    <label>Prenom :</label> <input type="text" name="prenom" text-transform="lowercase" minlength="3" maxlength="20" required/>
+                    <label>Nom :</label> <input type="text" name="nom" text-transform="uppercase"; minlength="3" maxlength="20" required/><!--ajout de la longueur maximale et minimale lors de la saisie-->              
+                    <label>Prenom :</label> <input type="text" name="prenom" text-transform="lowercase" minlength="3" maxlength="20" required/><!--ajout de la longueur maximale et minimale lors de la saisie-->
                     <input type="submit" value="Ajouter" name="saisie_pr"/>
                 </form>
             </div>
             &emsp;&emsp;
 
-            <div style="display: inline-table; overflow:scroll; border:#000000; padding: 5px; height: 100%;">
+            <div style="display: inline-table; overflow:scroll; border:#000000; padding: 5px; height: 100%;"><!--ajout de srollbar-->
                 <table>
                     <th>Nom</th>
                     <th>Prénom</th>
@@ -26,8 +26,8 @@
                         ?>
                         <tr>
                             <?php
-                            echo '<td>' . strtoupper($e['NOMENSEIGNANT']) . '</td>';
-                            echo '<td>' . ucwords($e['PRENOMENSEIGNANT']) . '</td>';
+                            echo '<td>' . strtoupper($e['NOMENSEIGNANT']) . '</td>';// mettre en majuscule les noms des ensaignants lors de la saisie
+                            echo '<td>' . ucwords($e['PRENOMENSEIGNANT']) . '</td>';// mettre la premiere lettre en majuscule les prénoms des ensaignants lors de la saisie
                             echo '<td><a href=../Controller/C_modif.php?codeens=' . $e['CodeEnseignant'] . '>Modifier <img src="../bootstrap-icons-1.8.3/pencil.svg" height="14" width="25"/></a></td>';
                             echo '<td><a href=../Controller/Supprime.php?codeens=' . $e['CodeEnseignant'] . ' ' . 'onclick="return confirmation();"' . '>Supprimer <img src="../bootstrap-icons-1.8.3/trash.svg" height="14" width="25"/></a></td>';
                         }
